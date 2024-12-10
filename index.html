@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry Store Heist Mystery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Jewelry Store Heist Mystery</h1>
+    <p id="story">
+      The quiet town of Sterling Grove has been thrust into chaos following an audacious late-night heist at the prestigious Diamond & Co. jewelry store. Known for its dazzling collection of rare gems, the store was cleaned out in a single night.
+
+      Millions of dollars' worth of diamonds, rubies, emeralds, and sapphires were stolen, vanishing without a trace. The crime was flawlessly executed, with the store’s state-of-the-art security system disabled just moments before the break-in. Local law enforcement suspects an inside job or a criminal mastermind who meticulously planned every detail of the operation.
+      
+      Witnesses reported seeing eight individuals acting suspiciously near the store earlier that evening. They include a mix of strangers and locals—each with their own shadowy motives. Could one of them have orchestrated the robbery? 
+      
+      As the lead investigator, the pressure is on to solve the case before the stolen gems are smuggled out of town. Time is running out, and the thief could already be one step ahead. Use your keen intuition and analytical mind to unravel the mystery and bring the perpetrator to justice.
+    </p>
+    <div class="info">
+      <p>Time Remaining: <span id="timer">300</span> seconds</p>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+    <button id="suspects-button">View Suspects</button>
+    <button id="hint-button">Get a Hint</button>
+    <p id="hint-text"></p>
+  </div>
+
+  <div id="suspects-page" class="hidden">
+    <h2>Suspects</h2>
+    <div id="suspects-list"></div>
+    <button id="back-button">Back to Main Menu</button>
+  </div>
+
+  <div id="end-screen" class="hidden">
+    <h2 id="end-message"></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
